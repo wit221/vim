@@ -46,4 +46,5 @@ filetype plugin indent on    " required
 "" Plugins end
 
 "" Mappins
-map <C-n> :NERDTree
+map <C-n> :NERDTree " Opening NERDTree
+set pastetoggle=<F3>
