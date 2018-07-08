@@ -3,8 +3,8 @@ set nocompatible    " Required or a lot of things
 set number	" Show line numbers
 set linebreak	" Break lines at word (requires Wrap lines)
 set showbreak=+++	" Wrap-broken line prefix
-set textwidth=79	" Line wrap (number of cols)
-set colorcolumn=80  " Show line limit
+set textwidth=99	" Line wrap (number of cols)
+set colorcolumn=100  " Show line limit
 
 set showmatch	" Highlight matching brace
 set visualbell	" Use visual bell (no beeping)
