@@ -48,3 +48,12 @@ filetype plugin indent on    " required
 "" Mappins
 map <C-n> :NERDTree " Opening NERDTree
 set pastetoggle=<F3>
+
+"" Startup commands
+" Start NERDTree
+autocmd VimEnter * NERDTree
+" Go to previous (last accessed) window.
+autocmd VimEnter * wincmd p
+
+"" Teardown commands
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
