@@ -5,6 +5,7 @@ set linebreak	" Break lines at word (requires Wrap lines)
 set showbreak=+++	" Wrap-broken line prefix
 set textwidth=99	" Line wrap (number of cols)
 set colorcolumn=100  " Show line limit
+set history=1000    " Ex cmd and search history limit
 
 set showmatch	" Highlight matching brace
 set visualbell	" Use visual bell (no beeping)
@@ -48,6 +49,12 @@ filetype plugin indent on    " required
 "" Mappins
 map <C-n> :NERDTree " Opening NERDTree
 set pastetoggle=<F3>
+
+" Buffer transitions
+nnoremap [b <silent> :bprevious<CR>
+nnoremap ]b <silent> :bnext<CR>
+nnoremap [B <silent> :bfirst<CR>
+nnoremap ]B <silent> :blast<CR>
 
 "" Startup commands
 " Start NERDTree
