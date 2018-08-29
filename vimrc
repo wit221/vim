@@ -49,6 +49,7 @@ filetype plugin indent on    " required
 "" Mappins
 map <C-n> :NERDTree " Opening NERDTree
 set pastetoggle=<F3>
+set showmode
 
 " Buffer transitions
 nnoremap [b <silent> :bprevious<CR>
