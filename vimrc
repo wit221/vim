@@ -20,7 +20,13 @@ set incsearch	" Searches for strings incrementally
  
 set autoindent	" Auto-indent new lines
 set shiftwidth=4	" Number of auto-indent spaces
-set smartindent	" Enable smart-indent
+" smartindent commented out to prevent python hash go to 0th column
+" set smartindent	" Enable smart-indent
+" http://vim.wikia.com/wiki/Restoring_indent_after_typing_hash
+set cindent
+set cinkeys-=0#
+set indentkeys-=0#
+
 set smarttab	" Enable smart-tabs
 set softtabstop=4	" Number of spaces per Tab
  
@@ -44,11 +50,12 @@ Plugin 'scrooloose/nerdtree'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
+runtime macros/matchit.vim
 "" Plugins end
 
-"" Mappins
+"" Mappings
 map <C-n> :NERDTree " Opening NERDTree
-set pastetoggle=<F3>
+set pastetoggle=<F4>
 set showmode
 
 " Buffer transitions
@@ -56,6 +63,10 @@ nnoremap [b <silent> :bprevious<CR>
 nnoremap ]b <silent> :bnext<CR>
 nnoremap [B <silent> :bfirst<CR>
 nnoremap ]B <silent> :blast<CR>
+
+" Saving and restoring sessions
+map <F2> :mksession! ~/.vim_session <CR> " Quick write session with F2
+map <F3> :source ~/.vim_session <CR>     " And load session with F3
 
 "" Startup commands
 " Start NERDTree
