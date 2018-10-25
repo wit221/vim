@@ -1,3 +1,18 @@
+"" Vundle
+filetype off " Apparently required for Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+
+"" Plugins start
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'morhetz/gruvbox'
+ 
+call vundle#end()            " required
+filetype plugin indent on    " required
+runtime macros/matchit.vim
+"" Plugins end
+
 "" General
 set nocompatible    " Required or a lot of things
 set number	" Show line numbers
@@ -5,6 +20,8 @@ set linebreak	" Break lines at word (requires Wrap lines)
 set showbreak=+++	" Wrap-broken line prefix
 set textwidth=99	" Line wrap (number of cols)
 set colorcolumn=100  " Show line limit
+" colorscheme morning Replaced with gruvbox
+colorscheme gruvbox
 set history=1000    " Ex cmd and search history limit
 
 set showmatch	" Highlight matching brace
@@ -39,19 +56,6 @@ set autochdir	" Change working directory to open buffer
 set undolevels=1000	" Number of undo levels
 set backspace=start	
 
-"" Vundle
-filetype off " Apparently required for Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-
-"" Plugins start
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-runtime macros/matchit.vim
-"" Plugins end
 
 "" Mappings
 map <C-n> :NERDTree " Opening NERDTree
