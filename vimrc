@@ -22,7 +22,10 @@ set textwidth=99	" Line wrap (number of cols)
 set colorcolumn=100  " Show line limit
 " colorscheme morning Replaced with gruvbox
 colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'hard'
+set bg=dark
 set history=1000    " Ex cmd and search history limit
+
 
 set showmatch	" Highlight matching brace
 set visualbell	" Use visual bell (no beeping)
