@@ -38,17 +38,20 @@ set smartcase	" Enable smart-case search
 set ignorecase	" Always case-insensitive
 set incsearch	" Searches for strings incrementally
  
+" set smarttab	" Enable smart-tabs
+filetype plugin indent on
+set tabstop=2
+set softtabstop=2	" Number of spaces per Tab
+
 set autoindent	" Auto-indent new lines
-set shiftwidth=4	" Number of auto-indent spaces
+set shiftwidth=2	" Number of auto-indent spaces
 " smartindent commented out to prevent python hash go to 0th column
 " set smartindent	" Enable smart-indent
 " http://vim.wikia.com/wiki/Restoring_indent_after_typing_hash
-set cindent
-set cinkeys-=0#
-set indentkeys-=0#
+" set cindent
+" set cinkeys-=0#
+" set indentkeys-=0#
 
-set smarttab	" Enable smart-tabs
-set softtabstop=4	" Number of spaces per Tab
  
 "" Advanced
 set ruler	" Show row and column ruler information
