@@ -4,9 +4,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 "" Plugins start
 call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'morhetz/gruvbox'
+Plugin 'VundleVim/Vundle.vim' " plugin manager
+Plugin 'scrooloose/nerdtree' " directory tree browse
+Plugin 'Valloric/YouCompleteMe' " autocomplete
+Plugin 'morhetz/gruvbox' " color theme
  
 call vundle#end()            " required
 filetype plugin indent on    " required
