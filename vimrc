@@ -43,6 +43,7 @@ set incsearch	" Searches for strings incrementally
 filetype plugin indent on
 set tabstop=2
 set softtabstop=2	" Number of spaces per Tab
+set expandtab " Spaces instead of tabs
 
 set autoindent	" Auto-indent new lines
 set shiftwidth=2	" Number of auto-indent spaces
