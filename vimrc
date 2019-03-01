@@ -67,6 +67,7 @@ set backspace=start
 
 "" Mappings
 map <C-n> :NERDTree " Opening NERDTree
+nmap ,n :NERDTreeFind<CR>
 set pastetoggle=<F4>
 set showmode
 
