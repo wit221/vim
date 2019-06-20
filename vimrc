@@ -24,6 +24,7 @@ set colorcolumn=100  " Show line limit
 " colorscheme morning Replaced with gruvbox
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'hard'
+set t_Co=256 " use 256 colorschemes for gruvbox
 set bg=dark
 set history=1000    " Ex cmd and search history limit
 
@@ -54,7 +55,6 @@ set shiftwidth=2	" Number of auto-indent spaces
 " set cinkeys-=0#
 " set indentkeys-=0#
 
- 
 "" Advanced
 set ruler	" Show row and column ruler information
 set showtabline=2	" Show tab bar
@@ -64,6 +64,7 @@ set autochdir	" Change working directory to open buffer
 set undolevels=1000	" Number of undo levels
 set backspace=start	
 
+" let g:NERDTreeWinPos = "right" " Open new file on the right side
 
 "" Mappings
 map <C-n> :NERDTree " Opening NERDTree
